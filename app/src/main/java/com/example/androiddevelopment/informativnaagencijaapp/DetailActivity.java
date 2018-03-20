@@ -1,20 +1,16 @@
 package com.example.androiddevelopment.informativnaagencijaapp;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
-public class MainActivity extends AppCompatActivity {
+public class DetailActivity extends AppCompatActivity {
 
 
     private ListView listView = null;
@@ -23,35 +19,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_detail);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_detail);
         setSupportActionBar(toolbar);
 
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
-
-
-        AdapterView.OnItemClickListener itemClickListener =
-                new AdapterView.OnItemClickListener() {
-                    public void onItemClick(AdapterView<?> listView,
-                                            View v,
-                                            int position,
-                                            long id)
-
-                    {
-                        Intent intent = new Intent(MainActivity.this,
-                                DetailActivity.class);
-                        //intent.putExtra(DetailActivity.EXTRA_NO, contact.get(position).getmId());
-                        startActivity(intent);
-                    }
-
-
-                };
-        listView = (ListView) findViewById(R.id.list_of_contact);
-        listView.setOnItemClickListener(itemClickListener);
-
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
 
@@ -100,5 +76,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }

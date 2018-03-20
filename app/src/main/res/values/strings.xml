@@ -6,4 +6,15 @@
     <string name="menu_all_news"> Sve vesti</string>
     <string name="menu_tools">Podesavanja</string>
     <string name="menu_about">O aplikaciji</string>
+
+    <string name="detail_identifikator">Identifikator:</string>
+    <string name="detail_naziv">Naziv:</string>
+    <string name="detail_opis">Opis:</string>
+    <string name="detail_autor">Autor:</string>
+    <string name="detail_datum">Datum:</string>
+    <string name="detail_zadovoljni_korisnici">Zadovoljni korisnici:</string>
+    <string name="detail_nezadovoljni_korisnici">Nezadovoljni korisnici:</string>
+    <string name="detail_komentari">Komantari:</string>
+
+
 </resources>
