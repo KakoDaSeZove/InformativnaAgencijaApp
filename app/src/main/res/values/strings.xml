@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InformativnaAgencijaApp</string>
+
+    <string name="action_title">Informativna agencija</string>
+
+    <string name="menu_all_news"> Sve vesti</string>
+    <string name="menu_tools">Podesavanja</string>
+    <string name="menu_about">O aplikaciji</string>
+</resources>
